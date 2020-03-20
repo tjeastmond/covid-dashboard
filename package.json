@@ -1,0 +1,57 @@
+{
+  "name": "nextjs-boilerplate",
+  "version": "1.0.0",
+  "description": "Simple boiler for starting a Next project",
+  "main": "index.js",
+  "repository": "none",
+  "keywords": [
+    "nextjs",
+    "next.js",
+    "node",
+    "boilerplate",
+    "javascript",
+    "quick start"
+  ],
+  "author": "TJ Eastmond <tj.eastmond@gmail.com>",
+  "license": "ISC",
+  "lint-staged": {
+    "src/**/*.{js,css,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^9.3.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "swr": "^0.1.18"
+  },
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
